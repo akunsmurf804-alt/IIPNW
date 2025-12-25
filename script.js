@@ -16,19 +16,6 @@ uploadFoto.addEventListener("change", function () {
 });
 
 
-function loginAdmin() {
-    const password = document.getElementById("adminPassword").value;
-    const status = document.getElementById("loginStatus");
-
-    if (password === "Kodekeras1") {
-        document.getElementById("adminUpload").style.display = "block";
-        status.innerText = "Login berhasil sebagai admin";
-        status.style.color = "green";
-    } else {
-        status.innerText = "Password salah!";
-        status.style.color = "red";
-    }
-}
 
 setInterval(nextSlide, 3000); // ganti slide tiap 3 detik
 
@@ -51,3 +38,4 @@ function prevSlide() {
   showSlide();
 }
 </script>
+
